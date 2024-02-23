@@ -1,24 +1,38 @@
-// Using var - function scoped
-var x = 10;
-console.log("Using var, x is initially:", x);
-if (true) {
-    var x = 20;
-    console.log("Inside if block, x is:", x);
-}
-console.log("Outside if block, x is:", x);
+// Define a sample string
+let str = "Hello, world!";
 
-// Using let - block scoped
-let y = 30;
-console.log("Using let, y is initially:", y);
-if (true) {
-    let y = 40;
-    
-    console.log("Inside if block, y is:", y);
-}
-console.log("Outside if block, y is:", y);
+// Concatenation
+let newStr = str.concat(" Welcome!");
+console.log("Concatenated string:", newStr);
 
-// Using const- block scoped
-const z = 50;
-console.log("Using const, z is initially:", z);
-// Trying to reassign const will result in an error
-// z = 60; // Uncommenting this line will throw an error
+// Slice
+let slicedStr = str.slice(7);
+console.log("Sliced string:", slicedStr);
+
+// toUpperCase
+let upperCaseStr = str.toUpperCase();
+console.log("Uppercase string:", upperCaseStr);
+
+// Split
+let words = str.split(" ");
+console.log("Split string into words:", words);
+
+
+// Length
+console.log("Length of string:", str.length);
+
+// charAt
+console.log("Character at index 4:", str.charAt(4));
+
+// startsWith
+console.log("Does the string start with 'Hello'?", str.startsWith("Hello"));
+
+// endsWith
+console.log("Does the string end with 'world!'?", str.endsWith("world!"));
+
+// includes
+console.log("Does the string include 'world'?", str.includes("world"));
+
+// Replace
+let replacedStr = str.replace("world", "planet");
+console.log("String with 'world' replaced:", replacedStr);
