@@ -1,38 +1,70 @@
-// Define a sample string
-let str = "Hello, world!";
+/*// Math.floor: Rounds down to the nearest integer
+console.log("Math.floor(3.7):", Math.floor(3.7));
+console.log("Math.floor(-3.7):", Math.floor(-3.7));
 
-// Concatenation
-let newStr = str.concat(" Welcome!");
-console.log("Concatenated string:", newStr);
+// Math.ceil: Rounds up to the nearest integer
+console.log("Math.ceil(3.2):", Math.ceil(3.2));
+console.log("Math.ceil(-3.2):", Math.ceil(-3.2));
 
-// Slice
-let slicedStr = str.slice(7);
-console.log("Sliced string:", slicedStr);
+// Math.abs: Returns the absolute value of a number
+console.log("Math.abs(-42):", Math.abs(-42));
 
-// toUpperCase
-let upperCaseStr = str.toUpperCase();
-console.log("Uppercase string:", upperCaseStr);
+// Math.random: Returns a random floating-point number between 0 (inclusive) and 1 (exclusive)
+console.log("Math.random():", Math.random());
 
-// Split
-let words = str.split(" ");
-console.log("Split string into words:", words);
+// To get a random integer between a specific range, you can use Math.floor with Math.random
+
+let randomInt = Math.floor(Math.random() * (10));
+console.log("Random integer between 1 and 10:", randomInt);*/
 
 
-// Length
-console.log("Length of string:", str.length);
+// let str = "pruthviraj";
+// let len = str.length;
+// let randomInt = Math.floor(Math.random()*(len));
+// console.log(str.charAt(randomInt));
 
-// charAt
-console.log("Character at index 4:", str.charAt(4));
+// // Alert dialog
+// alert("This is an alert dialog!");
 
-// startsWith
-console.log("Does the string start with 'Hello'?", str.startsWith("Hello"));
+// // Confirm dialog
+// let result = confirm("Do you want to proceed?");
+// if (result === true) {
+//     console.log("User clicked OK.");
+// } else {
+//     console.log("User clicked Cancel.");
+// }
 
-// endsWith
-console.log("Does the string end with 'world!'?", str.endsWith("world!"));
+// // Prompt dialog
+// let name = prompt("Please enter your name:", "John Doe");
+// if (name !== null) {
+//     console.log("Hello, " + name + "!");
+// } else {
+//     console.log("User clicked Cancel.");
+// }
 
-// includes
-console.log("Does the string include 'world'?", str.includes("world"));
 
-// Replace
-let replacedStr = str.replace("world", "planet");
-console.log("String with 'world' replaced:", replacedStr);
+// Function declaration
+function greet(name) {
+    console.log("Hello, " + name + "!");
+}
+
+// Function call
+greet("John");
+
+// Function expression
+let multiply = function(x, y) {
+    return x * y;
+};
+
+// Function call
+let result = multiply(3, 4);
+console.log("Result of multiplication:", result);
+
+// Arrow function
+let subtract = (a, b) => {
+    return a - b;
+};
+
+// Function call
+let difference = subtract(7, 2);
+console.log("Difference:", difference);
